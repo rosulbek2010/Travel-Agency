@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tur paketlar — SAFAR Sayohat Agentligi</title>
+  <meta name="description" content="Toshkentdan toʻgʻridan-toʻgʻri joʻnaydigan oltita hashamatli tur paket: Ipak yoʻli, Turkiya, Dubay, Misr, Maldiv orollari va Gruziya. Narxlar soʻmda.">
+  <meta name="theme-color" content="#123D35">
+
+  <!-- Shriftlar -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+
+  <!-- Asosiy CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Sahifaga xos CSS -->
+  <link rel="stylesheet" href="../css/tours.css">
+
+  <!-- Ikonlar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Asosiy mazmunga oʻtish</a>
+
+  <div class="wrapper">
+    <!-- Header boshlanishi -->
+    <header>
+
+      <div class="header-logo">
+        <a href="../index.html" class="header-logo-text">
+          <span>SAFAR</span>
+          <p>SAYOHAT AGENTLIGI</p>
+        </a>
+      </div>
+
+      <!-- Mobil burger menyu (sof CSS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menyuni ochish yoki yopish">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <span class="visually-hidden">Menyu</span>
+      </label>
+
+      <nav class="header-nav" aria-label="Asosiy menyu">
+        <ul>
+          <li><a href="../index.html">Bosh sahifa</a></li>
+          <li><a href="./destination.html">Yoʻnalishlar</a></li>
+          <li><a href="./tours.html" class="active" aria-current="page">Tur paketlar</a></li>
+          <li><a href="./about.html">Biz haqimizda</a></li>
+          <li><a href="./contact.html">Aloqa</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-btns">
+        <div class="header-btns-contact">
+          <div class="header-btns-link">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            <a href="https://t.me/safar_travel" target="_blank" rel="noopener noreferrer">@safar_travel</a>
+          </div>
+          <a href="tel:+998917585020" class="header-btns-tel">+998 91 758 50 20</a>
+        </div>
+        <div>
+          <a class="explore-button" href="../pages/tours.html">Turlarni koʻrish</a>
+        </div>
+      </div>
+    </header>
+    <!-- Header tugashi -->
+
+
+    <main id="main">
+
+      <!-- Hero boʻlimi -->
+      <section class="hero">
+        <div class="hero-wrapper">
+
+          <div class="hero-container">
+
+            <div class="hero-desc">
+              <span class="hero-desc-span">EKSKLYUZIV SAYOHAT TURLARI • 2026/2027</span>
+              <h1 class="hero-desc-title">Qoʻlda tayyorlangan tur paketlar va puxta ishlab chiqilgan marshrutlar</h1>
+              <p class="hero-desc-subtitle">Toshkentdan (TAS) toʻgʻridan-toʻgʻri joʻnaydigan, individual tarzda uyushtirilgan sayohatlar. Shaxsiy charter transferlar, besh yulduzli tarixiy mehmonxonalar hamda oʻzbek, rus va ingliz tillarida xizmat koʻrsatuvchi tajribali shaxsiy yordamchilar sizni kutmoqda.</p>
+            </div>
+
+            <div class="hero-destination">
+
+              <div class="hero-destination-packs">
+                <span>100%</span>
+                <p>BEVOSITA REYSLAR</p>
+              </div>
+
+              <div class="hero-destination-border"></div>
+
+              <div class="hero-destination-packs">
+                <span style="color: #7B5814;">4,98/5</span>
+                <p>IPAK YOʻLI REYTINGI</p>
+              </div>
+
+              <div class="hero-destination-border"></div>
+
+              <div class="hero-destination-packs">
+                <span>24/7</span>
+                <p>VIP YORDAMCHI</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="hero-bottom">
+
+            <!-- Paketlarga tezkor oʻtish havolalari (filtr emas: har biri tegishli kartaga olib boradi) -->
+            <nav class="hero-bottom-btns" aria-label="Paketlarga tezkor oʻtish">
+              <a class="bottom-btn-first" href="#paketlar" aria-current="true">Barcha paketlar (6)</a>
+              <a class="bottom-btn" href="#tur-maldiv">Hashamat va asal oyi</a>
+              <a class="bottom-btn" href="#tur-ipak-yoli">Madaniy meros</a>
+              <a class="bottom-btn" href="#tur-turkiya">Shahar sayohatlari</a>
+              <a class="bottom-btn" href="#tur-gruziya">Tabiat va togʻ sayohati</a>
+              <a class="bottom-btn" href="#tur-baa">Salomatlik va dam olish</a>
+            </nav>
+
+            <!-- Filtr maydonlari hozircha statik (faol emas) -->
+            <div class="hero-bottom-inputs">
+
+              <div class="inputs-container">
+                <label for="filter-duration"><i class="fa-regular fa-clock" aria-hidden="true"></i> DAVOMIYLIGI</label>
+                <select id="filter-duration" disabled title="Filtr hozircha mavjud emas">
+                  <option>Barcha davomiyliklar (3–14 kun)</option>
+                </select>
+              </div>
+
+              <div class="inputs-container">
+                <label for="filter-month"><i class="fa-regular fa-calendar" aria-hidden="true"></i> JOʻNASH OYI</label>
+                <select id="filter-month" disabled title="Filtr hozircha mavjud emas">
+                  <option>Istalgan oy (Toshkentdan toʻgʻridan-toʻgʻri)</option>
+                </select>
+              </div>
+
+              <div class="inputs-container">
+                <label for="filter-sort"><i class="fa-solid fa-up-down" aria-hidden="true"></i> TARTIBLASH</label>
+                <select id="filter-sort" disabled title="Filtr hozircha mavjud emas">
+                  <option>Tanlangan takliflar</option>
+                </select>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- Hero tugashi -->
+
+
+      <!-- Paketlar boʻlimi -->
+      <section class="luxury" id="paketlar">
+        <div class="luxury-wrapper">
+
+          <div class="luxury-head">
+            <div class="luxury-head-left">
+              <h2>Tanlangan hashamatli marshrutlar</h2>
+              <p>Kichik guruh yoki shaxsiy joʻnashlar kafolatlanadi, VIP imtiyozlar bilan.</p>
+            </div>
+
+            <div class="luxury-head-right">
+              <span>6 ta tanlangan paket mavjud</span>
+            </div>
+          </div>
+
+          <div class="luxury-container">
+
+          <!-- Tur kartasi: Ipak yoʻlining imperator odisseyasi -->
+          <article class="tour-card" id="tur-ipak-yoli">
+
+            <div class="tour-card-header">
+              <img src="../assets/img/tours/tour-first.png" alt="Gʻurub paytida yoritilgan Registon maydoni: uchta madrasa va maydon boʻylab yurgan sayyohlar" class="tour-image" width="374" height="256" loading="lazy">
+
+              <div class="tour-badges-top">
+                <span class="duration-badge">8 KUN / 7 TUN</span>
+                <span class="signature-badge">MUALLIFLIK MARSHRUT</span>
+              </div>
+
+              <div class="tour-title-overlay">
+                <span class="tour-subtitle">OʻZBEKISTON MEROSI</span>
+                <h3 class="tour-title">Ipak yoʻlining imperator odisseyasi</h3>
+              </div>
+            </div>
+
+            <div class="tour-card-main">
+              <div class="tour-card-body">
+
+                <div class="tour-info-item">
+                  <i class="fa-solid fa-road" aria-hidden="true"></i>
+                  <span class="text">Toshkent • Samarqand • Buxoro • Xiva</span>
+                </div>
+
+                <ul class="tour-features-list">
+                <li class="feature-item">
+                  <i class="fa-solid fa-train" aria-hidden="true"></i>
+                  <span>Afrosiyob tezyurar poyezdida birinchi sinf VIP kupesi</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                  <span>XVII asr Buxoro madrasasi ichida shamlar yorugʻidagi shaxsiy kechki ovqat</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-landmark" aria-hidden="true"></i>
+                  <span>Sanʼatshunos hamrohligida UNESCO obyektlariga navbatsiz kirish</span>
+                </li>
+                </ul>
+
+                <div class="tour-highlights-banner">
+                <div class="highlight-box">
+                  <i class="fa-solid fa-train" aria-hidden="true"></i>
+                  <span class="highlight-text">Afrosiyob VIP</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-hotel" aria-hidden="true"></i>
+                  <span class="highlight-text">5★ mehmonxonalar</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>
+                  <span class="highlight-text">Sanʼatshunos gid</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                  <span class="highlight-text">Toʻliq pansion</span>
+                </div>
+                </div>
+
+                <div class="tour-departures">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <span>Joʻnash: har juma va seshanba (May–Oktabr)</span>
+                </div>
+
+              </div>
+
+              <div class="tour-card-footer">
+                <div class="price-container">
+                  <span class="price-label">Boshlangʻich narx — hammasi kiritilgan</span>
+                  <div class="price-value">
+                    <span class="amount">7&nbsp;800&nbsp;000</span> <span class="currency">soʻm</span>
+                  </div>
+                </div>
+
+                <a class="book-button" href="../pages/contact.html" aria-label="Paketga buyurtma berish: Ipak yoʻlining imperator odisseyasi">
+                  Paketga buyurtma berish <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- Tur kartasi: Bosfor va Peri minoralari -->
+          <article class="tour-card" id="tur-turkiya">
+
+            <div class="tour-card-header">
+              <img src="../assets/img/tours/tour-second.png" alt="Kappadokiya tepaligidagi terrasada juftlik nonushta qilmoqda, tong shafaqli osmonda esa koʻplab havo sharlari uchmoqda" class="tour-image" width="374" height="256" loading="lazy">
+
+              <div class="tour-badges-top">
+                <span class="duration-badge">7 KUN / 6 TUN</span>
+                <span class="signature-badge">OMMABOP TANLOV</span>
+              </div>
+
+              <div class="tour-title-overlay">
+                <span class="tour-subtitle">TURKIYA BUYUKLIGI</span>
+                <h3 class="tour-title">Bosfor va Peri minoralari</h3>
+              </div>
+            </div>
+
+            <div class="tour-card-main">
+              <div class="tour-card-body">
+
+                <div class="tour-info-item">
+                  <i class="fa-solid fa-road" aria-hidden="true"></i>
+                  <span class="text">Istanbul va Kappadokiya (Toshkentdan toʻgʻridan-toʻgʻri reys)</span>
+                </div>
+
+                <ul class="tour-features-list">
+                <li class="feature-item">
+                  <i class="fa-solid fa-bed" aria-hidden="true"></i>
+                  <span>Kalderaga qaragan shaxsiy terrasali Museum gʻor-suiti</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-ship" aria-hidden="true"></i>
+                  <span>Bosfor boʻylab quyosh botishida 2 soatlik shaxsiy motorli yaxta sayri</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-wind" aria-hidden="true"></i>
+                  <span>Gʻreme vodiysi ustida havo shari parvozi narxga kiritilgan</span>
+                </li>
+                </ul>
+
+                <div class="tour-highlights-banner">
+                <div class="highlight-box">
+                  <i class="fa-solid fa-plane" aria-hidden="true"></i>
+                  <span class="highlight-text">Toʻgʻridan-toʻgʻri reys</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-bed" aria-hidden="true"></i>
+                  <span class="highlight-text">Gʻor-suit</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-ship" aria-hidden="true"></i>
+                  <span class="highlight-text">Yaxta sayri</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-wind" aria-hidden="true"></i>
+                  <span class="highlight-text">Havo shari</span>
+                </div>
+                </div>
+
+                <div class="tour-departures">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <span>Joʻnash: har dushanba va payshanba</span>
+                </div>
+
+              </div>
+
+              <div class="tour-card-footer">
+                <div class="price-container">
+                  <span class="price-label">Boshlangʻich narx — hammasi kiritilgan</span>
+                  <div class="price-value">
+                    <span class="amount">11&nbsp;200&nbsp;000</span> <span class="currency">soʻm</span>
+                  </div>
+                </div>
+
+                <a class="book-button" href="../pages/contact.html" aria-label="Paketga buyurtma berish: Bosfor va Peri minoralari">
+                  Paketga buyurtma berish <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- Tur kartasi: Arabiston kechalari va sahro sarobi -->
+          <article class="tour-card" id="tur-baa">
+
+            <div class="tour-card-header">
+              <img src="../assets/img/tours/tour-third.png" alt="Oy nurida yoritilgan sahroda chiroqlar bilan bezatilgan shaxsiy hovuz va chodirsimon glemping villalar" class="tour-image" width="374" height="256" loading="lazy">
+
+              <div class="tour-badges-top">
+                <span class="duration-badge">6 KUN / 5 TUN</span>
+                <span class="signature-badge">VIP ULTRA</span>
+              </div>
+
+              <div class="tour-title-overlay">
+                <span class="tour-subtitle">BAA HASHAMATI</span>
+                <h3 class="tour-title">Arabiston kechalari va sahro sarobi</h3>
+              </div>
+            </div>
+
+            <div class="tour-card-main">
+              <div class="tour-card-body">
+
+                <div class="tour-info-item">
+                  <i class="fa-solid fa-road" aria-hidden="true"></i>
+                  <span class="text">Dubay va Liva sahrosi vohasi (Toshkentdan toʻgʻridan-toʻgʻri reys)</span>
+                </div>
+
+                <ul class="tour-features-list">
+                <li class="feature-item">
+                  <i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>
+                  <span>Burj Khalifa 148-qavatidagi VIP Sky Lounge, shampan bilan kutib olish</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-tent" aria-hidden="true"></i>
+                  <span>Liva sahrosidagi shaxsiy glemping villa, shaxsiy xizmatchi bilan</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-ship" aria-hidden="true"></i>
+                  <span>Dubay Marinada anʼanaviy dau yaxtasida shaxsiy kechki ovqat kruizi</span>
+                </li>
+                </ul>
+
+                <div class="tour-highlights-banner">
+                <div class="highlight-box">
+                  <i class="fa-solid fa-plane" aria-hidden="true"></i>
+                  <span class="highlight-text">Toʻgʻridan-toʻgʻri reys</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>
+                  <span class="highlight-text">VIP lounj</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-tent" aria-hidden="true"></i>
+                  <span class="highlight-text">Glemping villa</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-ship" aria-hidden="true"></i>
+                  <span class="highlight-text">Dau kruizi</span>
+                </div>
+                </div>
+
+                <div class="tour-departures">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <span>Joʻnash: Toshkentdan har kuni reyslar</span>
+                </div>
+
+              </div>
+
+              <div class="tour-card-footer">
+                <div class="price-container">
+                  <span class="price-label">Boshlangʻich narx — hammasi kiritilgan</span>
+                  <div class="price-value">
+                    <span class="amount">15&nbsp;400&nbsp;000</span> <span class="currency">soʻm</span>
+                  </div>
+                </div>
+
+                <a class="book-button" href="../pages/contact.html" aria-label="Paketga buyurtma berish: Arabiston kechalari va sahro sarobi">
+                  Paketga buyurtma berish <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- Tur kartasi: Firʼavnlar va muqaddas Nil -->
+          <article class="tour-card" id="tur-misr">
+
+            <div class="tour-card-header">
+              <img src="../assets/img/tours/tour-fourth.png" alt="Nil daryosida quyosh botishida qadimiy ibodatxona yonidan suzib oʻtayotgan anʼanaviy yelkanli dau" class="tour-image" width="374" height="256" loading="lazy">
+
+              <div class="tour-badges-top">
+                <span class="duration-badge">9 KUN / 8 TUN</span>
+                <span class="signature-badge">TARIXIY SAYOHAT</span>
+              </div>
+
+              <div class="tour-title-overlay">
+                <span class="tour-subtitle">QADIMIY AJOYIBOTLAR</span>
+                <h3 class="tour-title">Firʼavnlar va muqaddas Nil</h3>
+              </div>
+            </div>
+
+            <div class="tour-card-main">
+              <div class="tour-card-body">
+
+                <div class="tour-info-item">
+                  <i class="fa-solid fa-road" aria-hidden="true"></i>
+                  <span class="text">Qohira • Luksor • Asvan • Giza</span>
+                </div>
+
+                <ul class="tour-features-list">
+                <li class="feature-item">
+                  <i class="fa-solid fa-ship" aria-hidden="true"></i>
+                  <span>Toʻrt kechalik besh yulduzli shaxsiy Nil kruizi suiti</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-landmark" aria-hidden="true"></i>
+                  <span>Tutanxamon maqbarasi va Shohlar vodiysiga eksklyuziv shaxsiy kirish</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+                  <span>Yetakchi misrshunos va shaxsiy haydovchi hamrohligida</span>
+                </li>
+                </ul>
+
+                <div class="tour-highlights-banner">
+                <div class="highlight-box">
+                  <i class="fa-solid fa-ship" aria-hidden="true"></i>
+                  <span class="highlight-text">Nil kruizi</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-landmark" aria-hidden="true"></i>
+                  <span class="highlight-text">Shohlar vodiysi</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+                  <span class="highlight-text">Misrshunos</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-car" aria-hidden="true"></i>
+                  <span class="highlight-text">Shaxsiy haydovchi</span>
+                </div>
+                </div>
+
+                <div class="tour-departures">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <span>Joʻnash: har yakshanba va chorshanba</span>
+                </div>
+
+              </div>
+
+              <div class="tour-card-footer">
+                <div class="price-container">
+                  <span class="price-label">Boshlangʻich narx — hammasi kiritilgan</span>
+                  <div class="price-value">
+                    <span class="amount">14&nbsp;900&nbsp;000</span> <span class="currency">soʻm</span>
+                  </div>
+                </div>
+
+                <a class="book-button" href="../pages/contact.html" aria-label="Paketga buyurtma berish: Firʼavnlar va muqaddas Nil">
+                  Paketga buyurtma berish <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- Tur kartasi: Moviy jannat dargohi -->
+          <article class="tour-card" id="tur-maldiv">
+
+            <div class="tour-card-header">
+              <img src="../assets/img/tours/tour-fifth.png" alt="Moviy lagunadagi suv usti villa: terrasada oʻtirgan juftlik, atrofda palma daraxtlari" class="tour-image" width="374" height="256" loading="lazy">
+
+              <div class="tour-badges-top">
+                <span class="duration-badge">6 KUN / 5 TUN</span>
+                <span class="signature-badge">ENG YAXSHI ASAL OYI</span>
+              </div>
+
+              <div class="tour-title-overlay">
+                <span class="tour-subtitle">MALDIV OROLLARI</span>
+                <h3 class="tour-title">Moviy jannat dargohi</h3>
+              </div>
+            </div>
+
+            <div class="tour-card-main">
+              <div class="tour-card-body">
+
+                <div class="tour-info-item">
+                  <i class="fa-solid fa-road" aria-hidden="true"></i>
+                  <span class="text">Male atollidagi shaxsiy orol (charter transfer)</span>
+                </div>
+
+                <ul class="tour-features-list">
+                <li class="feature-item">
+                  <i class="fa-solid fa-water" aria-hidden="true"></i>
+                  <span>Shaxsiy shisha pol va hovuzli, quyosh botishiga qaragan suv usti villa</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-plane" aria-hidden="true"></i>
+                  <span>Male aeroportidan panoramali gidrosamolyotda borish-kelish transferi</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-fish" aria-hidden="true"></i>
+                  <span>Dengiz biologi hamrohligida manta-rey va marjon rifi safarisi</span>
+                </li>
+                </ul>
+
+                <div class="tour-highlights-banner">
+                <div class="highlight-box">
+                  <i class="fa-solid fa-water" aria-hidden="true"></i>
+                  <span class="highlight-text">Suv usti villa</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-plane" aria-hidden="true"></i>
+                  <span class="highlight-text">Gidrosamolyot</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-fish" aria-hidden="true"></i>
+                  <span class="highlight-text">Marjon rifi</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                  <span class="highlight-text">Asal oyi</span>
+                </div>
+                </div>
+
+                <div class="tour-departures">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <span>Joʻnash: yil boʻyi shanba kungi charter reyslar</span>
+                </div>
+
+              </div>
+
+              <div class="tour-card-footer">
+                <div class="price-container">
+                  <span class="price-label">Boshlangʻich narx — hammasi kiritilgan</span>
+                  <div class="price-value">
+                    <span class="amount">24&nbsp;500&nbsp;000</span> <span class="currency">soʻm</span>
+                  </div>
+                </div>
+
+                <a class="book-button" href="../pages/contact.html" aria-label="Paketga buyurtma berish: Moviy jannat dargohi">
+                  Paketga buyurtma berish <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- Tur kartasi: Tbilisi va Qozbegi togʻ oromgohi -->
+          <article class="tour-card" id="tur-gruziya">
+
+            <div class="tour-card-header">
+              <img src="../assets/img/tours/tour-sixth.png" alt="Yashil togʻ yonbagʻrida Gergeti Muqaddas Uchlik cherkovi va uzoqdagi qorli Qozbegi choʻqqisi" class="tour-image" width="374" height="256" loading="lazy">
+
+              <div class="tour-badges-top">
+                <span class="duration-badge">5 KUN / 4 TUN</span>
+                <span class="signature-badge">TOGʻDA DAM OLISH</span>
+              </div>
+
+              <div class="tour-title-overlay">
+                <span class="tour-subtitle">KAVKAZ CHOʻQQILARI</span>
+                <h3 class="tour-title">Tbilisi va Qozbegi togʻ oromgohi</h3>
+              </div>
+            </div>
+
+            <div class="tour-card-main">
+              <div class="tour-card-body">
+
+                <div class="tour-info-item">
+                  <i class="fa-solid fa-road" aria-hidden="true"></i>
+                  <span class="text">Tbilisi • Kaxetiya vino mintaqasi • Qozbegi choʻqqilari</span>
+                </div>
+
+                <ul class="tour-features-list">
+                <li class="feature-item">
+                  <i class="fa-solid fa-mountain-sun" aria-hidden="true"></i>
+                  <span>Togʻga qaragan panoramali xonali Rooms Hotel Kazbegi</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-wine-glass" aria-hidden="true"></i>
+                  <span>Chateau Mukhrani uzumzorida shaxsiy degustatsiya va someler kechki ovqati</span>
+                </li>
+                <li class="feature-item">
+                  <i class="fa-solid fa-car" aria-hidden="true"></i>
+                  <span>Gergeti Muqaddas Uchlik cherkovi togʻ dovoniga shaxsiy 4x4 ekspeditsiya</span>
+                </li>
+                </ul>
+
+                <div class="tour-highlights-banner">
+                <div class="highlight-box">
+                  <i class="fa-solid fa-mountain-sun" aria-hidden="true"></i>
+                  <span class="highlight-text">Togʻ manzarasi</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-wine-glass" aria-hidden="true"></i>
+                  <span class="highlight-text">Vino degustatsiyasi</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-car" aria-hidden="true"></i>
+                  <span class="highlight-text">4x4 ekspeditsiya</span>
+                </div>
+                <div class="highlight-box">
+                  <i class="fa-solid fa-hotel" aria-hidden="true"></i>
+                  <span class="highlight-text">Rooms Hotel</span>
+                </div>
+                </div>
+
+                <div class="tour-departures">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <span>Joʻnash: har payshanba va yakshanba</span>
+                </div>
+
+              </div>
+
+              <div class="tour-card-footer">
+                <div class="price-container">
+                  <span class="price-label">Boshlangʻich narx — hammasi kiritilgan</span>
+                  <div class="price-value">
+                    <span class="amount">8&nbsp;600&nbsp;000</span> <span class="currency">soʻm</span>
+                  </div>
+                </div>
+
+                <a class="book-button" href="../pages/contact.html" aria-label="Paketga buyurtma berish: Tbilisi va Qozbegi togʻ oromgohi">
+                  Paketga buyurtma berish <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+
+          </article>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- Paketlar tugashi -->
+
+
+      <!-- Narxga kiradigan xizmatlar -->
+      <section class="includings">
+        <div class="includings-wrapper">
+
+          <div class="includings-head">
+
+            <div class="includings-head-left">
+              <span>SAFAR STANDARTI</span>
+              <h2>Har bir SAFAR paketiga nimalar kiradi</h2>
+            </div>
+
+            <div class="includings-head-right">
+              <p>SAFAR bilan sayohat qilganda, joʻnab ketishdan qaytib kelgunga qadar har daqiqa uchun toʻliq xotirjamlik kafolatlanadi.</p>
+            </div>
+
+          </div>
+
+          <div class="includings-container">
+
+            <div class="includings-packs">
+              <div class="includings-packs-icon">
+                <i class="fa-solid fa-headset" aria-hidden="true"></i>
+              </div>
+              <div class="includings-packs-desc">
+                <h3>Telegram orqali 24/7 shaxsiy yordamchi</h3>
+                <p>Toshkentdagi katta dispetcherlik jamoamiz bilan alohida shaxsiy kanal orqali toʻgʻridan-toʻgʻri aloqa: javob 2 daqiqadan kam vaqt ichida kafolatlanadi.</p>
+              </div>
+            </div>
+
+            <div class="includings-packs">
+              <div class="includings-packs-icon">
+                <i class="fa-solid fa-money-bills" aria-hidden="true"></i>
+              </div>
+              <div class="includings-packs-desc">
+                <h3>Shaffof narxlar</h3>
+                <p>Barcha soliqlar, shahar yigʻimlari, aviabagaj normalari va chaychaqalar oldindan eʼlon qilinadi. Yetib borgach yashirin toʻlovlar yoʻq.</p>
+              </div>
+            </div>
+
+            <div class="includings-packs">
+              <div class="includings-packs-icon">
+                <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+              </div>
+              <div class="includings-packs-desc">
+                <h3>Keng qamrovli tibbiy sugʻurta</h3>
+                <p>Yetakchi sugʻurtachilar tomonidan taqdim etiladigan 50&nbsp;000 AQSH dollarlik xalqaro tibbiy favqulodda holatlar va reys kechikishi sugʻurtasi sovgʻa sifatida.</p>
+              </div>
+            </div>
+
+            <div class="includings-packs">
+              <div class="includings-packs-icon">
+                <i class="fa-solid fa-passport" aria-hidden="true"></i>
+              </div>
+              <div class="includings-packs-desc">
+                <h3>Vizaga ustuvor koʻmak</h3>
+                <p>Ichki konsullik mutaxassislarimiz elektron vizalar, notarial tasdiqlangan taklifnomalar va Oʻzbekiston fuqarolari uchun tezlashtirilgan rasmiylashtirishni yoʻlga qoʻyadi.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- Narxga kiradigan xizmatlar tugashi -->
+
+
+      <!-- Individual sayohat boʻlimi -->
+      <section class="require">
+        <div class="require-wrapper">
+
+          <div class="require-content">
+            <span class="require-span">INDIVIDUAL SAYOHAT LOYIHACHISI</span>
+
+            <h2 class="require-title">Oilangiz yoki diplomatik delegatsiyangiz uchun individual sayohat kerakmi?</h2>
+
+            <p class="require-description">
+              Toshkentdagi shaxsiy sayohat loyihachilarimiz sizning maxfiy jadvalingizga muvofiq individual marshrutlar, shaxsiy samolyot charterlari va ish vaqtidan keyingi eksklyuziv muzey tashriflarini tayyorlaydi.
+            </p>
+          </div>
+
+          <div class="require-actions">
+            <a href="https://t.me/safar_travel" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+              <span>Telegramda shaxsiy yordamchiga yozish</span>
+            </a>
+
+            <a href="tel:+998712000020" class="btn-primary">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span>+998 71 200 00 20</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+      <!-- Individual sayohat tugashi -->
+
+
+    </main>
+
+
+    <!-- Footer boshlanishi -->
+    <footer>
+      <div class="footer-wrapper">
+
+        <div class="footer-container">
+
+          <div class="footer-brand">
+
+            <div class="brand-head">
+              <span>Safar</span>
+              <p>Ipak yoʻli hashamatli ekspeditsiyalari</p>
+            </div>
+
+            <p class="brand-desc">Madaniy chuqurlik va hashamatli qulaylik bilan tayyorlangan individual sayohatlar: Toshkentdan dunyoning eng ajoyib manzillarigacha.</p>
+
+            <div class="brand-link">
+              <a href="https://t.me/safar_travel" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+              </a>
+              <a href="https://instagram.com/safar_travel" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="footer-links">
+            <h3>TEZKOR HAVOLALAR</h3>
+            <ul class="links-link">
+              <li><a href="../index.html">Bosh sahifa</a></li>
+              <li><a href="./destination.html">Yoʻnalishlar</a></li>
+              <li><a href="./tours.html" class="active" aria-current="page">Tur paketlar</a></li>
+              <li><a href="./about.html">Biz haqimizda</a></li>
+              <li><a href="./contact.html">Aloqa</a></li>
+              <li><a href="./contact.html#faq">Savol-javoblar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-destinations">
+            <h3>Mashhur yoʻnalishlar</h3>
+            <div class="footer-destinations-link">
+              <ul>
+                <li><a href="./destination.html">Turkiya</a></li>
+                <li><a href="./destination.html">Misr</a></li>
+                <li><a href="./destination.html">Samarqand</a></li>
+              </ul>
+              <ul>
+                <li><a href="./destination.html">Dubay</a></li>
+                <li><a href="./destination.html">Maldiv orollari</a></li>
+                <li><a href="./destination.html">Buxoro</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-contact">
+            <h3>ALOQA VA OFIS</h3>
+            <ul class="footer-contact-list">
+              <li>
+                <img src="../assets/icons/header-footer/footer-contact1.png" alt="" width="12" height="15" loading="lazy">
+                <a href="https://maps.google.com/?q=Amir+Temur+shoh+ko%CA%BBchasi+Toshkent" target="_blank" rel="noopener noreferrer">Amir Temur shoh koʻchasi, Toshkent, Oʻzbekiston</a>
+              </li>
+              <li>
+                <img src="../assets/icons/header-footer/footer-contact2.png" alt="" width="14" height="14" loading="lazy">
+                <a href="tel:+998712000020">+998 71 200 00 20</a>
+              </li>
+              <li>
+                <img src="../assets/icons/header-footer/footer-contact3.png" alt="" width="15" height="12" loading="lazy">
+                <a href="https://t.me/safar_travel" target="_blank" rel="noopener noreferrer">@safar_travel</a>
+              </li>
+              <li>
+                <img src="../assets/icons/header-footer/footer-contact4.png" alt="" width="15" height="12" loading="lazy">
+                <a href="mailto:info@safar.uz">info@safar.uz</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <div>
+            <p>© 2026 SAFAR Sayohat Agentligi. Barcha huquqlar himoyalangan. Namunaviy portfolio loyihasi.</p>
+          </div>
+
+          <div class="footer-bottom-link">
+            <a href="./contact.html">Maxfiylik siyosati</a>
+            <a href="./contact.html">Foydalanish shartlari</a>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+    <!-- Footer tugashi -->
+  </div>
+</body>
+
+</html>

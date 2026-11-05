@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Turkiya, BAA, Misr, Maldiv orollari, Yaponiya va Ipak yoʻli: Toshkent va Samarqanddan joʻnaydigan individual sayohatlar hamda mavsumiy taqvim.">
+  <meta name="theme-color" content="#123D35">
+
+  <!-- Shriftlar -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+
+  <!-- Asosiy CSS fayli -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Sahifaga xos CSS -->
+  <link rel="stylesheet" href="../css/destination.css">
+
+  <!-- Ikonlar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+  <title>Yoʻnalishlar — SAFAR Sayohat Agentligi</title>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Asosiy mazmunga oʻtish</a>
+  <div class="wrapper">
+    <!-- Header boshlanishi -->
+    <header>
+
+      <!-- Header logotipi -->
+      <div class="header-logo">
+        <a href="../index.html" class="header-logo-text">
+          <span>SAFAR</span>
+          <p>SAYOHAT AGENTLIGI</p>
+        </a>
+      </div>
+      <!-- Header logotipi tugadi -->
+
+      <!-- Mobil burger tugmasi (sof CSS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menyuni ochish yoki yopish">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <span class="visually-hidden">Menyu</span>
+      </label>
+
+      <!-- Header navigatsiyasi -->
+      <nav class="header-nav" aria-label="Asosiy menyu">
+        <ul>
+          <li><a href="../index.html">Bosh sahifa</a></li>
+          <li><a href="./destination.html" class="active" aria-current="page">Yoʻnalishlar</a></li>
+          <li><a href="./tours.html">Tur paketlar</a></li>
+          <li><a href="./about.html">Biz haqimizda</a></li>
+          <li><a href="./contact.html">Aloqa</a></li>
+        </ul>
+      </nav>
+      <!-- Header navigatsiyasi tugadi -->
+
+      <!-- Header tugmalari -->
+      <div class="header-btns">
+        <div class="header-btns-contact">
+          <div class="header-btns-link">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            <a href="https://t.me/safar_travel" target="_blank" rel="noopener noreferrer">@safar_travel</a>
+          </div>
+          <a href="tel:+998917585020" class="header-btns-tel">+998 91 758 50 20</a>
+        </div>
+        <div>
+          <a class="explore-button" href="./tours.html">Turlarni koʻrish</a>
+        </div>
+      </div>
+      <!-- Header tugmalari tugadi -->
+    </header>
+    <!-- Header tugadi -->
+
+    <!-- Main boshlanishi -->
+    <main id="main">
+      <div class="wrapper">
+
+
+        <!-- Hero boʻlimi -->
+        <section class="hero">
+          <div class="hero-wrapper">
+
+            <!-- Hero konteyneri -->
+            <div class="hero-container">
+
+              <div class="hero-desc">
+                <span class="hero-desc-span">DUNYO VA IPAK YOʻLI MANZILLARI</span>
+                <h1 class="hero-desc-title">Dunyo qitʼalari va Ipak yoʻli boʻylab <span>saralangan</span> manzillar</h1>
+                <p class="hero-desc-subtitle">Transoksiananing qadimiy majolika gumbazlaridan olis arxipelaglar va Oʻrta
+                  dengiz terrasalarigacha. Toshkent va Samarqanddan toʻgʻridan-toʻgʻri reyslar bilan qoʻlda tuzilgan
+                  individual marshrutlar.</p>
+              </div>
+
+              <div class="hero-destination">
+                <div class="hero-destination-main">
+                  <span>JOʻNASH MARKAZI</span>
+                  <p class="hero-destination-name">Toshkent (TAS / UTTT)</p>
+                  <p class="hero-destination-note">42+ hashamatli manzilga toʻgʻridan-toʻgʻri yoʻnalishlar</p>
+                </div>
+
+                <i class="fa-solid fa-plane-departure" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <!-- Hero konteyneri tugadi -->
+
+            <!-- Hero filtri -->
+            <div class="hero-filter">
+              <div class="hero-filter-container">
+
+                <div class="hero-filter-input">
+                  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                  <label for="dest-search" class="visually-hidden">Davlat, shahar yoki vohani qidirish</label>
+                  <input type="text" id="dest-search" name="q" placeholder="Davlat, shahar yoki vohani qidiring…" />
+                </div>
+
+                <div class="hero-filter-select">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  <label for="dest-season" class="visually-hidden">Fasl boʻyicha tanlash</label>
+                  <select id="dest-season" name="season">
+                    <option>Barcha fasllar (2026–2027)</option>
+                    <option>Bahor</option>
+                    <option>Yoz</option>
+                    <option>Kuz</option>
+                    <option>Qish</option>
+                  </select>
+                </div>
+
+                <div class="hero-filter-select">
+                  <i class="fa-brands fa-pagelines" aria-hidden="true"></i>
+                  <label for="dest-style" class="visually-hidden">Sayohat uslubi boʻyicha tanlash</label>
+                  <select id="dest-style" name="style">
+                    <option>Barcha sayohat uslublari</option>
+                    <option>Sarguzasht</option>
+                    <option>Madaniy</option>
+                    <option>Hashamatli</option>
+                    <option>Oilaviy</option>
+                  </select>
+                </div>
+
+                <button type="button" class="hero-filter-btn" aria-disabled="true" aria-describedby="filter-note"
+                  title="Filtrlash hozircha ishlamaydi: katalog toʻliq koʻrsatilgan">
+                  <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                  Katalogni filtrlash
+                </button>
+                <span id="filter-note" class="visually-hidden">Filtrlash hozircha ishlamaydi: katalog toʻliq koʻrsatilgan.</span>
+
+              </div>
+            </div>
+            <!-- Hero filtri tugadi -->
+
+          </div>
+        </section>
+        <!-- Hero boʻlimi tugadi -->
+
+
+        <!-- Yoʻnalishlar boʻlimi -->
+        <section class="destinations" id="katalog">
+
+          <!-- Boʻlim sarlavhasi -->
+          <div class="destinations-heading">
+            <div class="heading-left">
+              <span class="section-label">MAVJUD EKSPEDITSIYALAR</span>
+              <h2>Qoʻlda saralangan Ipak yoʻli va dunyo yoʻnalishlari</h2>
+            </div>
+
+            <div class="heading-right">
+              <span class="heading-right-span">8 ta individual sayohat</span>
+              <span class="partner-badge">Oʻzbekiston havo yoʻllari VIP hamkorlari</span>
+            </div>
+          </div>
+
+          <div class="destination-main">
+            <!-- 1-karta -->
+            <article class="destination-card" id="samarqand">
+              <div class="card-image">
+                <img src="../assets/img/home-page/Destination-Samarkand.png" alt="Samarqanddagi Registon maydoni madrasasining naqshinkor peshtoqi" width="374" height="280" loading="lazy">
+                <span class="country-tag">OʻZBEKISTON</span>
+                <span class="card-badge">Tezyurar poyezd</span>
+                <span class="image-bottom">
+                  <span class="flight-time"><span aria-hidden="true">◷</span> 2 soat 10 daq Afrosiyob</span>
+                  <span class="season-badge">Bahor / Kuz</span>
+                </span>
+              </div>
+
+              <div class="card-body">
+                <div class="card-body-container">
+                  <span class="card-category">MADANIY SAYOHAT · 5 KUN / 4 TUN</span>
+                  <h3>Samarqand va<br>Registon</h3>
+                  <p>Registon maydoniga ish vaqtidan keyingi xususiy kirish hamda qayta tiklangan butik mehmonxonalarda qolish imkoniyati.</p>
+                </div>
+
+                <div class="card-body-bottom">
+                  <div class="card-price"><strong>14&nbsp;800&nbsp;000 <small>soʻmdan</small></strong></div>
+
+                  <a href="./tours.html" class="card-button">Mavjud turlarni koʻrish<span class="visually-hidden">: Samarqand</span> <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2-karta -->
+            <article class="destination-card" id="turkiya">
+              <div class="card-image">
+                <img src="../assets/img/home-page/destination-cappadociya.png" alt="Kappadokiya osmonida uchayotgan issiq havo sharlari" width="374" height="280" loading="lazy">
+                <span class="country-tag">TURKIYA</span>
+                <span class="card-badge">Toʻgʻri reys TAS–IST</span>
+                <span class="image-bottom">
+                  <span class="flight-time"><span aria-hidden="true">◷</span> Toshkentdan 4 soat 45 daq</span>
+                  <span class="season-badge">Kuz 2026</span>
+                </span>
+              </div>
+
+              <div class="card-body">
+                <div class="card-body-container">
+                  <span class="card-category">SARGUZASHT SAYOHATI · 7 KUN / 6 TUN</span>
+                  <h3>Kappadokiya va Istanbul</h3>
+                  <p>Tong shafaqida issiq havo sharida parvoz, gʻor mehmonxonalarida tunash va Bosfor sohilidagi Istanbul sayri.</p>
+                </div>
+
+                <div class="card-body-bottom">
+                  <div class="card-price"><strong>9&nbsp;600&nbsp;000 <small>soʻmdan</small></strong></div>
+
+                  <a href="./tours.html" class="card-button">Mavjud turlarni koʻrish<span class="visually-hidden">: Turkiya</span> <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3-karta -->
+            <article class="destination-card" id="baa">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Dubayning osmonoʻpar binolari va Burj Khalifa shafaq nurida" width="600" height="400" loading="lazy">
+                <span class="country-tag">BAA</span>
+                <span class="card-badge">Har kuni reyslar</span>
+                <span class="image-bottom">
+                  <span class="flight-time"><span aria-hidden="true">◷</span> Toshkentdan 3 soat 30 daq</span>
+                  <span class="season-badge">Qishki quyosh</span>
+                </span>
+              </div>
+
+              <div class="card-body">
+                <div class="card-body-container">
+                  <span class="card-category">OILAVIY DAM OLISH · 6 KUN / 5 TUN</span>
+                  <h3>Dubay va Abu-Dabi</h3>
+                  <p>Burj Khalifa manzarasi, sahro safarisi va Abu-Dabidagi Katta masjidga ekskursiya: oilaviy dam olish uchun qulay dastur.</p>
+                </div>
+
+                <div class="card-body-bottom">
+                  <div class="card-price"><strong>11&nbsp;200&nbsp;000 <small>soʻmdan</small></strong></div>
+
+                  <a href="./tours.html" class="card-button">Mavjud turlarni koʻrish<span class="visually-hidden">: BAA, Dubay</span> <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 4-karta -->
+            <article class="destination-card" id="misr">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=600&q=80" alt="Giza ehromlari yonidan quyosh botishida oʻtayotgan tuyalar karvoni" width="600" height="400" loading="lazy">
+                <span class="country-tag">MISR</span>
+                <span class="card-badge">Xususiy misrshunos</span>
+                <span class="image-bottom">
+                  <span class="flight-time"><span aria-hidden="true">◷</span> Toshkentdan 5 soat 15 daq</span>
+                  <span class="season-badge">Oktabr – Aprel</span>
+                </span>
+              </div>
+
+              <div class="card-body">
+                <div class="card-body-container">
+                  <span class="card-category">MADANIY SAYOHAT · 8 KUN / 7 TUN</span>
+                  <h3>Qohira va Nil</h3>
+                  <p>Giza ehromlari, Nil daryosida kruiz va xususiy misrshunos hamrohligida Qohira muzeylari boʻylab sayr.</p>
+                </div>
+
+                <div class="card-body-bottom">
+                  <div class="card-price"><strong>10&nbsp;400&nbsp;000 <small>soʻmdan</small></strong></div>
+
+                  <a href="./tours.html" class="card-button">Mavjud turlarni koʻrish<span class="visually-hidden">: Misr</span> <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5-karta -->
+            <article class="destination-card" id="maldiv">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=600&q=80" alt="Maldiv orollaridagi firuza lagunada suv ustida qurilgan villalar" width="600" height="750" loading="lazy">
+                <span class="country-tag">MALDIV</span>
+                <span class="card-badge">Xususiy gidrosamolyot</span>
+                <span class="image-bottom">
+                  <span class="flight-time"><span aria-hidden="true">◷</span> Toshkentdan 9 soat 30 daq</span>
+                  <span class="season-badge">Yil davomida</span>
+                </span>
+              </div>
+
+              <div class="card-body">
+                <div class="card-body-container">
+                  <span class="card-category">HASHAMATLI DAM OLISH · 9 KUN / 8 TUN</span>
+                  <h3>Maldiv orollari</h3>
+                  <p>Suv ustidagi villada yashash, xususiy gidrosamolyotda transfer va marjon rifi yonida shoʻngʻish.</p>
+                </div>
+
+                <div class="card-body-bottom">
+                  <div class="card-price"><strong>18&nbsp;900&nbsp;000 <small>soʻmdan</small></strong></div>
+
+                  <a href="./tours.html" class="card-button">Mavjud turlarni koʻrish<span class="visually-hidden">: Maldiv orollari</span> <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6-karta -->
+            <article class="destination-card" id="buxoro">
+              <div class="card-image">
+                <img src="../assets/img/home-page/Destination-Bukhara.png" alt="Kechqurun yoritilgan Kalon minorasi va Buxoroning tarixiy meʼmoriy majmuasi" width="374" height="280" loading="lazy">
+                <span class="country-tag">OʻZBEKISTON</span>
+                <span class="card-badge">Ekspeditsiya darajasi</span>
+                <span class="image-bottom">
+                  <span class="flight-time"><span aria-hidden="true">◷</span> Urganchgacha 1 soat 40 daq</span>
+                  <span class="season-badge">Bahor va kuz</span>
+                </span>
+              </div>
+
+              <div class="card-body">
+                <div class="card-body-container">
+                  <span class="card-category">SARGUZASHT SAYOHATI · 6 KUN / 5 TUN</span>
+                  <h3>Buxoro va Xiva</h3>
+                  <p>Kalon minorasi soyasida sayr, Ichan-Qalʼa devorlari ichida tungi ekskursiya va Qizilqum yurta lagerida tunash.</p>
+                </div>
+
+                <div class="card-body-bottom">
+                  <div class="card-price"><strong>8&nbsp;700&nbsp;000 <small>soʻmdan</small></strong></div>
+
+                  <a href="./tours.html" class="card-button">Mavjud turlarni koʻrish<span class="visually-hidden">: Buxoro va Xiva</span> <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 7-karta -->
+            <article class="destination-card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80" alt="Oq toshli zinapoya va moviy Oʻrta dengizga ochiladigan orol manzarasi" width="600" height="900" loading="lazy">
+                <span class="country-tag">YUNONISTON</span>
+                <span class="card-badge">Shengen vizasi · VIP</span>
+                <span class="image-bottom">
+                  <span class="flight-time"><span aria-hidden="true">◷</span> Toʻgʻridan-toʻgʻri 6 soat 15 daq</span>
+                  <span class="season-badge">Bahor 2027</span>
+                </span>
+              </div>
+
+              <div class="card-body">
+                <div class="card-body-container">
+                  <span class="card-category">HASHAMATLI DAM OLISH · 7 KUN / 6 TUN</span>
+                  <h3>Santorini va Egey dengizi</h3>
+                  <p>Oq toshli koʻchalar, kaldera ustidagi villalar va quyosh botishida dengiz sayri; Shengen vizasi tezkor rasmiylashtiriladi.</p>
+                </div>
+
+                <div class="card-body-bottom">
+                  <div class="card-price"><strong>16&nbsp;500&nbsp;000 <small>soʻmdan</small></strong></div>
+
+                  <a href="./tours.html" class="card-button">Mavjud turlarni koʻrish<span class="visually-hidden">: Yunoniston, Santorini</span> <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 8-karta -->
+            <article class="destination-card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" alt="Kiotodagi anʼanaviy koʻcha va shafaqdagi besh qavatli pagoda" width="600" height="400" loading="lazy">
+                <span class="country-tag">YAPONIYA</span>
+                <span class="card-badge">Toʻgʻri reys TAS–NRT</span>
+                <span class="image-bottom">
+                  <span class="flight-time"><span aria-hidden="true">◷</span> Toʻgʻridan-toʻgʻri 7 soat 45 daq</span>
+                  <span class="season-badge">Sakura bahori</span>
+                </span>
+              </div>
+
+              <div class="card-body">
+                <div class="card-body-container">
+                  <span class="card-category">MADANIY SAYOHAT · 10 KUN / 9 TUN</span>
+                  <h3>Kioto va Tokio</h3>
+                  <p>Kioto ibodatxonalari, anʼanaviy choy marosimi va Tokioda Michelin yulduzli restoranlarda kechki ovqat.</p>
+                </div>
+
+                <div class="card-body-bottom">
+                  <div class="card-price"><strong>19&nbsp;800&nbsp;000 <small>soʻmdan</small></strong></div>
+
+                  <a href="./tours.html" class="card-button">Mavjud turlarni koʻrish<span class="visually-hidden">: Yaponiya</span> <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- Yoʻnalish kartalari tugadi -->
+
+        </section>
+        <!-- Yoʻnalishlar boʻlimi tugadi -->
+
+
+        <!-- Mavsumiy taqvim boʻlimi -->
+        <section class="seasons">
+          <div class="seasons-wrapper">
+
+            <div class="seasonal-heading">
+              <span class="seasonal-label">SAFAR MASLAHATLARI</span>
+
+              <h2>Mavsumiy taqvim va eng qulay joʻnash muddatlari</h2>
+
+              <p>
+                Sayohatlarni iqlim ritmi, meva hosili, madaniy bayramlar va Markaziy Osiyodan joʻnash uchun
+                eng qulay dengiz sharoitlariga moslab tuzamiz.
+              </p>
+            </div>
+
+
+            <!-- Mavsumiy kartalar -->
+            <div class="seasonal-cards">
+
+              <!-- 1-karta: Kuz -->
+              <article class="seasonal-card">
+
+                <div class="seasonal-cards-container">
+                  <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+
+                  <span class="season-date">SENTABR – NOYABR</span>
+
+                  <h3>Kuzgi baxmal fasli</h3>
+
+                  <p class="season-description">
+                    Markaziy Osiyo meʼmorchiligini kashf etish uchun ideal vaqt.
+                    Iliq quyoshli kunlar, Fargʻona vodiysining shirin anorlari
+                    hamda Kappadokiya va Misrning qulay ob-havosi.
+                  </p>
+                </div>
+
+                <div class="season-destinations">
+                  <h4>ENG YAXSHI YOʻNALISHLAR:</h4>
+
+                  <div class="destination-tags">
+                    <span>Samarqand</span>
+                    <span>Buxoro</span>
+                    <span>Kappadokiya</span>
+                    <span>Qohira</span>
+                  </div>
+                </div>
+
+              </article>
+
+
+              <!-- 2-karta: Qish -->
+              <article class="seasonal-card">
+
+                <div class="seasonal-cards-container">
+                  <i class="fa-regular fa-sun" aria-hidden="true"></i>
+
+                  <span class="season-date">DEKABR – FEVRAL</span>
+
+                  <h3>Qish quyoshi va marjon dengizlari</h3>
+
+                  <p class="season-description">
+                    Kontinental sovuqdan toʻgʻridan-toʻgʻri charter reyslar bilan
+                    tinch lagunalarga, Fors qoʻltigʻining iliq suvlariga va
+                    yulduzli osmon ostidagi issiq sahro qumtepalariga qochib keting.
+                  </p>
+                </div>
+
+                <div class="season-destinations">
+                  <h4>ENG YAXSHI YOʻNALISHLAR:</h4>
+
+                  <div class="destination-tags">
+                    <span>Maldiv orollari</span>
+                    <span>Dubay</span>
+                    <span>Abu-Dabi</span>
+                    <span>Nil kruizlari</span>
+                  </div>
+                </div>
+
+              </article>
+
+
+              <!-- 3-karta: Bahor -->
+              <article class="seasonal-card">
+
+                <div class="seasonal-cards-container">
+                  <i class="fa-brands fa-pagelines" aria-hidden="true"></i>
+
+                  <span class="season-date">MART – MAY</span>
+
+                  <h3>Bahor gullari va Navroʻz</h3>
+
+                  <p class="season-description">
+                    Ipak yoʻli qishloqlaridagi Navroʻz bayramlari, Oʻrta dengiz
+                    orollarida gullagan bahor bogʻlari hamda Kioto va Tokiodagi
+                    mashhur sakura mavsumi.
+                  </p>
+                </div>
+
+                <div class="season-destinations">
+                  <h4>ENG YAXSHI YOʻNALISHLAR:</h4>
+
+                  <div class="destination-tags">
+                    <span>Kioto va Tokio</span>
+                    <span>Santorini</span>
+                    <span>Xiva va Orol</span>
+                    <span>Istanbul</span>
+                  </div>
+                </div>
+
+              </article>
+
+            </div>
+            <!-- Mavsumiy kartalar tugadi -->
+
+          </div>
+        </section>
+        <!-- Mavsumiy taqvim boʻlimi tugadi -->
+
+
+
+        <!-- Banner boʻlimi -->
+        <section class="banner" id="custom-itinerary">
+          <div class="banner-wrapper">
+
+            <!-- Chap tomon: sarlavha va matnlar -->
+            <div class="banner-content">
+              <div class="banner-tag">
+                <span class="tag-text">INDIVIDUAL MARSHRUT VA SHAXSIY YORDAMCHI</span>
+              </div>
+
+              <h2 class="banner-title">Roʻyxatda yoʻq manzil yoki xususiy parvoz qidiryapsizmi?</h2>
+
+              <p class="banner-description">
+                Toshkentdagi katta sayohat direktorlarimiz 55+ davlat boʻylab xususiy charterlar, diplomatik protokolni
+                muvofiqlashtirish, olis yurta lagerlari va butik mehmonxonalarni toʻliq band qilish xizmatlarida
+                ixtisoslashgan.
+              </p>
+
+              <!-- Afzalliklar -->
+              <div class="banner-features">
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                  <span>IATA sertifikatli agentlik</span>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                  <span>24/7 shaxsiy yordamchi</span>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                  <span>Taklif 4 soat ichida</span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Oʻng tomon: tugmalar va fon naqsh -->
+            <div class="banner-actions">
+              <img src="../assets/img/destination/star.png" alt="" width="384" height="384" loading="lazy">
+
+              <a href="./contact.html" class="btn-primary">
+                <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                <span>Individual reja soʻrash</span>
+              </a>
+
+              <a href="https://t.me/safar_travel" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                <span>Telegram orqali toʻgʻridan-toʻgʻri aloqa</span>
+              </a>
+            </div>
+
+          </div>
+        </section>
+        <!-- Banner boʻlimi tugadi -->
+
+
+
+      </div>
+    </main>
+    <!-- Main tugadi -->
+
+    <!-- Footer boshlanishi -->
+    <footer>
+      <div class="footer-wrapper">
+
+        <div class="footer-container">
+
+          <!-- Footer brendi -->
+          <div class="footer-brand">
+
+            <div class="brand-head">
+              <span>Safar</span>
+              <p>Ipak yoʻli hashamatli ekspeditsiyalari</p>
+            </div>
+
+            <p class="brand-desc">Madaniy chuqurlik va hashamatli qulaylik bilan tayyorlangan individual sayohatlar:
+              Toshkentdan dunyoning eng ajoyib manzillarigacha.</p>
+
+            <div class="brand-link">
+              <a href="https://t.me/safar_travel" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+              </a>
+              <a href="https://instagram.com/safar_travel" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Tezkor havolalar -->
+          <div class="footer-links">
+            <h3>TEZKOR HAVOLALAR</h3>
+            <ul class="links-link">
+              <li><a href="../index.html">Bosh sahifa</a></li>
+              <li><a href="./destination.html" class="active" aria-current="page">Yoʻnalishlar</a></li>
+              <li><a href="./tours.html">Tur paketlar</a></li>
+              <li><a href="./about.html">Biz haqimizda</a></li>
+              <li><a href="./contact.html">Aloqa</a></li>
+              <li><a href="./contact.html#faq">Savol-javoblar</a></li>
+            </ul>
+          </div>
+
+          <!-- Mashhur yoʻnalishlar -->
+          <div class="footer-destinations">
+            <h3>Mashhur yoʻnalishlar</h3>
+            <div class="footer-destinations-link">
+              <ul>
+                <li><a href="./destination.html">Turkiya</a></li>
+                <li><a href="./destination.html">Misr</a></li>
+                <li><a href="./destination.html">Samarqand</a></li>
+              </ul>
+              <ul>
+                <li><a href="./destination.html">Dubay</a></li>
+                <li><a href="./destination.html">Maldiv orollari</a></li>
+                <li><a href="./destination.html">Buxoro</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Aloqa -->
+          <div class="footer-contact">
+            <h3>ALOQA VA OFIS</h3>
+            <ul class="footer-contact-list">
+              <li>
+                <img src="../assets/icons/header-footer/footer-contact1.png" alt="" width="12" height="15" loading="lazy">
+                <a href="https://maps.google.com/?q=Amir+Temur+shoh+ko%CA%BBchasi+Toshkent" target="_blank" rel="noopener noreferrer">Amir Temur shoh koʻchasi, Toshkent, Oʻzbekiston</a>
+              </li>
+              <li>
+                <img src="../assets/icons/header-footer/footer-contact2.png" alt="" width="14" height="14" loading="lazy">
+                <a href="tel:+998712000020">+998 71 200 00 20</a>
+              </li>
+              <li>
+                <img src="../assets/icons/header-footer/footer-contact3.png" alt="" width="15" height="12" loading="lazy">
+                <a href="https://t.me/safar_travel" target="_blank" rel="noopener noreferrer">@safar_travel</a>
+              </li>
+              <li>
+                <img src="../assets/icons/header-footer/footer-contact4.png" alt="" width="15" height="12" loading="lazy">
+                <a href="mailto:info@safar.uz">info@safar.uz</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Footer pastki qismi -->
+        <div class="footer-bottom">
+
+          <div>
+            <p>© 2026 SAFAR Sayohat Agentligi. Barcha huquqlar himoyalangan. Namunaviy portfolio loyihasi.</p>
+          </div>
+
+          <div class="footer-bottom-link">
+            <a href="./contact.html">Maxfiylik siyosati</a>
+            <a href="./contact.html">Foydalanish shartlari</a>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+    <!-- Footer tugadi -->
+  </div>
+</body>
+
+</html>
