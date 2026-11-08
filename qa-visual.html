@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QA visual harness</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #1a1a1a; overflow: hidden; }
+  #stage { position: absolute; inset: 0; overflow: hidden; }
+  iframe { border: 0; display: block; transform-origin: 0 0; }
+  #tag { position: fixed; right: 6px; bottom: 6px; z-index: 5; font: 11px/1.4 monospace; color: #fff; background: #000a; padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div id="tag">QA</div>
+<script>
+  const p = new URLSearchParams(location.search);
+  const w = parseInt(p.get('w') || '1280', 10);
+  const scroll = parseInt(p.get('y') || '0', 10);
+  const sel = p.get('s');
+  const page = p.get('p') || '/index.html';
+  const scale = Math.min(window.innerWidth / w, 1);
+  const h = Math.ceil(window.innerHeight / scale);
+  const f = document.createElement('iframe');
+  f.width = w;
+  f.height = h;
+  f.style.transform = 'scale(' + scale + ')';
+  f.src = page;
+  f.addEventListener('load', () => {
+    const d = f.contentDocument;
+    const s = d.createElement('style');
+    s.textContent = '[data-aos]{opacity:1!important;transform:none!important;transition:none!important}';
+    d.head.appendChild(s);
+    const target = sel && d.querySelector(sel);
+    d.documentElement.style.scrollBehavior = 'auto';
+    if (target) {
+      f.contentWindow.scrollTo(0, target.getBoundingClientRect().top + f.contentWindow.scrollY - 8);
+    } else {
+      f.contentWindow.scrollTo(0, scroll);
+    }
+  });
+  document.getElementById('stage').appendChild(f);
+  document.getElementById('tag').textContent = (p.get('p') || '/index.html') + ' @ ' + w + 'px  scale ' + scale.toFixed(2);
+</script>
+</body>
+</html>

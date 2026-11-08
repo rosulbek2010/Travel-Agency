@@ -1,0 +1,796 @@
+/* ============================================================
+   SAFAR TRAVEL AGENCY — DESTINATIONS PAGE STYLES (destination.css)
+   Curated Global & Silk Road Expeditions
+   ============================================================ */
+
+/* ============================================================
+   1. HERO SECTION & FILTERS
+   ============================================================ */
+.hero {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-primary);
+}
+
+.hero-wrapper {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 150px 48px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Hero container (title + departure hub) */
+.hero-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-desc {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-desc-span {
+  color: var(--color-accent);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-desc-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: clamp(34px, 4.2vw, 56px);
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  font-family: var(--font-serif);
+}
+
+.hero-desc-title span {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent-light);
+  background: linear-gradient(135deg, #fbe3b5 0%, #e5b364 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-desc-subtitle {
+  color: #c2d6cf;
+  font-weight: 350;
+  font-size: clamp(15px, 1.2vw, 17px);
+  line-height: 1.7;
+  font-family: var(--font-sans);
+}
+
+/* Departure Hub Card */
+.hero-destination {
+  padding: 24px 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(229, 179, 100, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+
+.hero-destination:hover {
+  transform: translateY(-2px);
+  border-color: rgba(229, 179, 100, 0.5);
+}
+
+.hero-destination-main {
+  max-width: 220px;
+}
+
+.hero-destination-main span {
+  display: block;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  margin-bottom: 4px;
+}
+
+.hero-destination-main .hero-destination-name {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.3;
+  font-family: var(--font-sans);
+}
+
+.hero-destination-main .hero-destination-note {
+  color: #bad3cb;
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: 12.5px;
+  line-height: 1.4;
+  font-family: var(--font-sans);
+}
+
+.hero-destination i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(229, 179, 100, 0.15);
+  border: 1px solid rgba(229, 179, 100, 0.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: var(--color-accent);
+  font-size: 18px;
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+}
+
+.hero-destination:hover i {
+  transform: rotate(-15deg) scale(1.08);
+}
+
+/* ============================================================
+   2. DESTINATIONS CATALOG SECTION
+   ============================================================ */
+.destinations {
+  width: 100%;
+  padding: 120px 0;
+  background-color: var(--color-bg-body);
+}
+
+.destinations-heading {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 48px 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.heading-left {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-label {
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.heading-left h2 {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(30px, 3.2vw, 44px);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.heading-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.heading-right-span {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-primary);
+}
+
+.partner-badge {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background-color: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 11.5px;
+  letter-spacing: 0.3px;
+  font-family: var(--font-sans);
+}
+
+/* Destination Cards Grid */
+.destination-main {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+/* Single Destination Card */
+.destination-card {
+  border-radius: 20px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  scroll-margin-top: 110px;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(229, 179, 100, 0.45);
+}
+
+.destination-card:target {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 11;
+  background-color: #0c2620;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-spring);
+}
+
+.destination-card:hover .card-image img {
+  transform: scale(1.08);
+}
+
+/* Country Tag & Badges */
+.country-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 10.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+.card-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  background: rgba(0, 38, 32, 0.88);
+  border: 1px solid rgba(229, 179, 100, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--color-accent-light);
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.3px;
+  font-family: var(--font-sans);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.image-bottom {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  z-index: 2;
+}
+
+.flight-time,
+.season-badge {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.2px;
+  font-family: var(--font-sans);
+}
+
+/* Card Body */
+.card-body {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 20px;
+}
+
+.card-body-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-category {
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: 10.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.card-body-container h3 {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
+  transition: color var(--transition-fast);
+}
+
+.destination-card:hover .card-body-container h3 {
+  color: var(--color-emerald-light);
+}
+
+.card-body-container p {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: var(--font-sans);
+  margin-top: 4px;
+}
+
+.card-body-bottom {
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-price strong {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.card-price small {
+  color: var(--color-gold);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 11.5px;
+  letter-spacing: 0.3px;
+}
+
+/* ============================================================
+   3. SEASONAL CALENDAR SECTION
+   ============================================================ */
+.seasons {
+  width: 100%;
+  padding: 120px 0;
+  background-color: var(--color-surface-soft);
+  position: relative;
+}
+
+.seasons-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.seasonal-heading {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.seasonal-label {
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.seasonal-heading h2 {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.seasonal-heading p {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.65;
+  font-family: var(--font-sans);
+}
+
+/* Seasonal Cards Grid */
+.seasonal-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.seasonal-card {
+  border-radius: 20px;
+  padding: 36px 32px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.seasonal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(229, 179, 100, 0.4);
+}
+
+.seasonal-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.seasonal-cards-container i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--color-surface-soft);
+  color: var(--color-gold);
+  font-size: 20px;
+  border: 1px solid var(--color-border);
+}
+
+.season-date {
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.seasonal-cards-container h3 {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.season-description {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-size: 14.5px;
+  line-height: 1.65;
+  font-family: var(--font-sans);
+}
+
+.season-destinations {
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.season-destinations h4 {
+  color: var(--color-text-light);
+  font-weight: 700;
+  font-size: 10.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.destination-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.destination-tags span {
+  padding: 5px 12px;
+  border-radius: 9999px;
+  background-color: var(--color-surface-soft);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 12px;
+  font-family: var(--font-sans);
+  border: 1px solid var(--color-border);
+}
+
+/* ============================================================
+   4. CUSTOM ITINERARY BANNER SECTION
+   ============================================================ */
+.banner {
+  width: 100%;
+  padding: 110px 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #07221c 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.banner-tag {
+  display: inline-flex;
+}
+
+.tag-text {
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.banner-title {
+  color: #ffffff;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(30px, 3.2vw, 44px);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.banner-description {
+  color: #c2d6cf;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: var(--font-sans);
+}
+
+.banner-features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  padding-top: 12px;
+}
+
+.feature-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #bad3cb;
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.feature-item i {
+  color: var(--color-accent);
+  font-size: 15px;
+}
+
+/* Banner Actions (Right column) */
+.banner-actions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 320px;
+}
+
+.banner-actions img {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 260px;
+  height: 260px;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ============================================================ */
+
+/* Laptop (max-width: 1100px) */
+@media screen and (max-width: 1100px) {
+  .hero-wrapper,
+  .destinations-heading,
+  .destination-main,
+  .seasons-wrapper,
+  .banner-wrapper {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .destination-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .seasonal-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .banner-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .banner-actions {
+    width: 100%;
+    max-width: 440px;
+  }
+}
+
+/* Tablet (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .hero-wrapper {
+    padding: 120px 24px 48px;
+    gap: 32px;
+  }
+
+  .destinations-heading,
+  .destination-main,
+  .seasons-wrapper,
+  .banner-wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .destinations,
+  .seasons,
+  .banner {
+    padding: 80px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .hero-destination {
+    width: 100%;
+  }
+
+  .destinations-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 36px;
+  }
+
+  .heading-right {
+    align-items: flex-start;
+  }
+
+  .destination-main {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .seasonal-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .banner-actions {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .hero-wrapper {
+    padding: 105px 18px 36px;
+  }
+
+  .destinations-heading,
+  .destination-main,
+  .seasons-wrapper,
+  .banner-wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .card-body {
+    padding: 20px 18px;
+  }
+
+  .card-body-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .card-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .seasonal-card {
+    padding: 26px 20px;
+  }
+}

@@ -1,0 +1,376 @@
+/* ============================================================
+   SAFAR TRAVEL AGENCY — UNIFIED UI LAYER (ui.css)
+   Loaded after page styles. Single source of truth for
+   buttons, page-hero treatment and shared card refinements.
+   ============================================================ */
+
+/* ============================================================
+   1. SHARED PAGE HERO (inner pages)
+   ============================================================ */
+.page-hero {
+  background-color: var(--color-primary);
+  background-image:
+    radial-gradient(circle at 84% 12%, rgba(229, 179, 100, 0.16) 0%, transparent 44%),
+    radial-gradient(circle at 8% 94%, rgba(36, 94, 82, 0.5) 0%, transparent 52%),
+    linear-gradient(135deg, #002620 0%, #073129 55%, #0b3b32 100%);
+  overflow: hidden;
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  top: -230px;
+  right: -190px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  border: 1px solid rgba(229, 179, 100, 0.14);
+  box-shadow:
+    0 0 0 90px rgba(229, 179, 100, 0.035),
+    0 0 0 180px rgba(229, 179, 100, 0.018);
+  pointer-events: none;
+}
+
+.page-hero > :is(.hero-wrapper, .extra) {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   2. BUTTON SYSTEM
+   ============================================================ */
+
+/* --- Primary: deep emerald with a muted gold hairline --- */
+.explore-button,
+.destinations-btn,
+.pack-foot-btn,
+.book-button,
+.submit-btn,
+.btn-primary,
+.inquiries-foot-btn a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 28px;
+  border: 1px solid rgba(229, 179, 100, 0.28);
+  border-radius: var(--btn-radius);
+  background: linear-gradient(135deg, var(--btn-emerald-1) 0%, var(--btn-emerald-2) 100%);
+  color: var(--btn-ivory);
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.35px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow: 0 10px 24px -16px rgba(0, 38, 32, 0.7);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-fast);
+}
+
+.explore-button::before,
+.destinations-btn::before,
+.pack-foot-btn::before,
+.book-button::before,
+.submit-btn::before,
+.btn-primary::before,
+.inquiries-foot-btn a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(115deg, transparent 25%, rgba(255, 255, 255, 0.18) 50%, transparent 75%);
+  transform: translateX(-130%);
+  transition: transform 0.75s var(--ease-spring);
+  pointer-events: none;
+}
+
+.explore-button:hover,
+.destinations-btn:hover,
+.pack-foot-btn:hover,
+.book-button:hover,
+.submit-btn:hover,
+.btn-primary:hover,
+.inquiries-foot-btn a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(229, 179, 100, 0.55);
+  box-shadow: 0 16px 30px -18px rgba(0, 38, 32, 0.8);
+}
+
+.explore-button:hover::before,
+.destinations-btn:hover::before,
+.pack-foot-btn:hover::before,
+.book-button:hover::before,
+.submit-btn:hover::before,
+.btn-primary:hover::before,
+.inquiries-foot-btn a:hover::before {
+  transform: translateX(130%);
+}
+
+.explore-button:active,
+.destinations-btn:active,
+.pack-foot-btn:active,
+.book-button:active,
+.submit-btn:active,
+.btn-primary:active,
+.inquiries-foot-btn a:active {
+  transform: translateY(0);
+}
+
+/* Contextual sizing */
+.explore-button {
+  min-height: 42px;
+  padding: 0 22px;
+  border-radius: 10px;
+  font-size: 12.5px;
+}
+
+.destinations-btn,
+.discover-btn {
+  min-height: 54px;
+  padding: 0 30px;
+}
+
+.pack-foot-btn {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 16px;
+  padding: 0 18px;
+  font-size: 12.5px;
+}
+
+.book-button {
+  min-height: 46px;
+  padding: 0 24px;
+  font-size: 13px;
+}
+
+.book-button .arrow {
+  transition: transform var(--transition-fast);
+}
+
+.book-button:hover .arrow {
+  transform: translateX(4px);
+}
+
+.submit-btn {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 28px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+.inquiries-foot-btn a {
+  min-height: 44px;
+  padding: 0 22px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+}
+
+/* --- Gold accent CTA: muted, editorial --- */
+.destinations-btn,
+.btn-primary--gold {
+  border-color: rgba(201, 160, 94, 0.5);
+  background: linear-gradient(135deg, #f2e4c7 0%, #e3c38e 52%, var(--btn-gold-deep) 100%);
+  color: #12332b;
+  box-shadow: 0 14px 30px -18px rgba(201, 160, 94, 0.8);
+}
+
+.destinations-btn:hover,
+.btn-primary--gold:hover {
+  border-color: rgba(201, 160, 94, 0.75);
+  background: linear-gradient(135deg, #f7ecd6 0%, #e9cd9f 55%, #d6b071 100%);
+  color: #0b2b24;
+  box-shadow: 0 18px 34px -18px rgba(201, 160, 94, 0.9);
+}
+
+/* --- Ghost CTA: for dark surfaces --- */
+.discover-btn,
+.contact-btns,
+.btn-primary--ghost {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f4f7f5;
+  box-shadow: none;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.discover-btn:hover,
+.contact-btns:hover,
+.btn-primary--ghost:hover {
+  border-color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-primary);
+  box-shadow: 0 14px 28px -18px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Compact card action --- */
+.card-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 38, 32, 0.16);
+  background: transparent;
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.card-button:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  transform: none;
+}
+
+/* --- Filter / category chips --- */
+.tours-btns a,
+.hero-bottom-btns a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-dark);
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: none;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.tours-btns a:hover {
+  border-color: rgba(0, 38, 32, 0.18);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.tours-btns a.active {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.hero-bottom-btns a {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #e8f0ec;
+}
+
+.hero-bottom-btns a:hover {
+  border-color: rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.hero-bottom-btns a.bottom-btn-first,
+.hero-bottom-btns a[aria-current="true"] {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-primary);
+  box-shadow: 0 6px 16px -8px rgba(229, 179, 100, 0.5);
+}
+
+/* ============================================================
+   3. CARD REFINEMENTS
+   ============================================================ */
+.packets,
+.tour-pack,
+.destination-card,
+.tour-card,
+.leaders-packs,
+.testimonials-packs,
+.salon-pack,
+.seasonal-card {
+  position: relative;
+}
+
+.packets::after,
+.tour-pack::after,
+.destination-card::after,
+.tour-card::after,
+.leaders-packs::after,
+.testimonials-packs::after,
+.salon-pack::after,
+.seasonal-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  right: 18px;
+  height: 2px;
+  z-index: 4;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, rgba(229, 179, 100, 0.9), transparent);
+  opacity: 0;
+  transform: scaleX(0.4);
+  transition: opacity 0.45s var(--ease-smooth), transform 0.45s var(--ease-spring);
+  pointer-events: none;
+}
+
+.packets:hover::after,
+.tour-pack:hover::after,
+.destination-card:hover::after,
+.tour-card:hover::after,
+.leaders-packs:hover::after,
+.testimonials-packs:hover::after,
+.salon-pack:hover::after,
+.seasonal-card:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* ============================================================
+   4. SMALL SHARED POLISH
+   ============================================================ */
+input::placeholder,
+textarea::placeholder {
+  color: #8b9a95;
+  opacity: 1;
+}
+
+/* Keep AOS content readable when motion is reduced or JS is unavailable */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .hero-scroll img {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,758 @@
+/* ============================================================
+   SAFAR TRAVEL AGENCY — TOURS PAGE STYLES (tours.css)
+   Handcrafted Luxury Travel Packages & Expeditions
+   ============================================================ */
+
+/* ============================================================
+   1. HERO SECTION & FILTERS
+   ============================================================ */
+.hero {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-primary);
+}
+
+.hero-wrapper {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 150px 48px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-desc {
+  max-width: 740px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-desc-span {
+  color: var(--color-accent);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-desc-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: clamp(34px, 4.2vw, 54px);
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  font-family: var(--font-serif);
+}
+
+.hero-desc-subtitle {
+  color: #c2d6cf;
+  font-weight: 350;
+  font-size: clamp(15px, 1.2vw, 17px);
+  line-height: 1.7;
+  font-family: var(--font-sans);
+}
+
+/* Statistics Box in Hero (Right Column) */
+.hero-destination {
+  padding: 24px 32px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(229, 179, 100, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  box-shadow: var(--shadow-lg);
+  flex-wrap: wrap;
+}
+
+.hero-destination-packs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+
+.hero-destination-packs span {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  color: var(--color-accent-light);
+}
+
+.hero-destination-packs p {
+  color: #bad3cb;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.hero-destination-border {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Hero Bottom Navigation */
+.hero-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ============================================================
+   2. LUXURY PACKAGES GRID SECTION
+   ============================================================ */
+.luxury {
+  width: 100%;
+  padding: 120px 0;
+  background-color: var(--color-bg-body);
+}
+
+.luxury-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.luxury-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+}
+
+.luxury-head-left {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.luxury-head-left h2 {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(30px, 3.2vw, 44px);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.luxury-head-left p {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.6;
+  font-family: var(--font-sans);
+}
+
+.luxury-head-right span {
+  padding: 8px 18px;
+  border-radius: 9999px;
+  background-color: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-dark);
+  font-weight: 600;
+  font-size: 13px;
+  font-family: var(--font-sans);
+}
+
+/* Tour Cards Grid */
+.luxury-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+/* Tour Card */
+.tour-card {
+  border-radius: 24px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  scroll-margin-top: 110px;
+}
+
+.tour-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(229, 179, 100, 0.45);
+}
+
+.tour-card:target {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+/* Tour Card Header & Hero Image */
+.tour-card-header {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background-color: #0c2620;
+}
+
+.tour-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-spring);
+}
+
+.tour-card:hover .tour-image {
+  transform: scale(1.08);
+}
+
+.tour-badges-top {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  z-index: 2;
+}
+
+.duration-badge {
+  padding: 5px 12px;
+  border-radius: 9999px;
+  background: rgba(0, 38, 32, 0.88);
+  border: 1px solid rgba(229, 179, 100, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--color-accent-light);
+  font-weight: 700;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.signature-badge {
+  padding: 5px 12px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Title Overlay at bottom of image */
+.tour-title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 24px 18px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 38, 32, 0.92) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 2;
+}
+
+.tour-subtitle {
+  color: var(--color-accent-light);
+  font-weight: 700;
+  font-size: 10.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.tour-title {
+  color: #ffffff;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.25;
+  letter-spacing: -0.2px;
+}
+
+/* Tour Card Main Content */
+.tour-card-main {
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 24px;
+}
+
+.tour-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tour-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13.5px;
+}
+
+.tour-info-item i {
+  color: var(--color-gold);
+  font-size: 14px;
+}
+
+/* Features List */
+.tour-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.feature-item i {
+  color: var(--color-gold);
+  font-size: 13px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* Highlights 4-Grid */
+.tour-departures {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-light);
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.tour-departures i {
+  color: var(--color-gold);
+  font-size: 12px;
+}
+
+/* Tour Card Footer */
+.tour-card-footer {
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.price-label {
+  color: var(--color-text-light);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.price-value {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.price-value .amount {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.1;
+}
+
+.price-value .currency {
+  color: var(--color-gold);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* ============================================================
+   3. INCLUDED SERVICES (SAFAR STANDARDS)
+   ============================================================ */
+.includings {
+  width: 100%;
+  padding: 120px 0;
+  background-color: var(--color-surface-soft);
+  position: relative;
+}
+
+.includings-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.includings-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.includings-head-left {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.includings-head-left span {
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.includings-head-left h2 {
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(30px, 3.2vw, 44px);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.includings-head-right {
+  max-width: 480px;
+}
+
+.includings-head-right p {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.65;
+  font-family: var(--font-sans);
+}
+
+.includings-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.includings-packs {
+  position: relative;
+  padding: 38px 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color var(--transition-fast);
+}
+
+.includings-packs:nth-child(2n) {
+  border-left: 1px solid var(--color-border);
+}
+
+.includings-packs:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+.includings-packs:hover {
+  background-color: var(--color-surface-soft);
+}
+
+.includings-packs-icon {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border-radius: 14px;
+  background-color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 20px;
+  transition: transform var(--transition-fast);
+}
+
+.includings-packs:hover .includings-packs-icon {
+  transform: scale(1.06);
+}
+
+.includings-packs-desc h3 {
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.includings-packs-desc p {
+  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+/* ============================================================
+   4. CUSTOM TRIP REQUIRE SECTION (CTA)
+   ============================================================ */
+.require {
+  width: 100%;
+  padding: 110px 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #07221c 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.require-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+  position: relative;
+  z-index: 2;
+}
+
+.require-content {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.require-span {
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.require-title {
+  color: #ffffff;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: clamp(30px, 3.2vw, 44px);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.require-description {
+  color: #c2d6cf;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: var(--font-sans);
+}
+
+.require-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 320px;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ============================================================ */
+
+/* Laptop (max-width: 1100px) */
+@media screen and (max-width: 1100px) {
+  .hero-wrapper,
+  .luxury-wrapper,
+  .includings-wrapper,
+  .require-wrapper {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .require-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .require-actions {
+    width: 100%;
+    max-width: 440px;
+  }
+}
+
+/* Tablet (max-width: 868px) */
+@media screen and (max-width: 868px) {
+  .luxury-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-wrapper {
+    padding: 120px 24px 48px;
+    gap: 32px;
+  }
+
+  .luxury-wrapper,
+  .includings-wrapper,
+  .require-wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .luxury,
+  .includings,
+  .require {
+    padding: 80px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .hero-destination {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .includings-container {
+    grid-template-columns: 1fr;
+    border-radius: 20px;
+  }
+
+  .includings-packs {
+    padding: 28px 26px;
+    border-left: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .includings-packs:nth-child(2n) {
+    border-left: none;
+  }
+
+  .includings-packs:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .includings-packs:last-child {
+    border-bottom: none;
+  }
+
+  .require-actions {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .hero-wrapper {
+    padding: 105px 18px 36px;
+  }
+
+  .luxury-wrapper,
+  .includings-wrapper,
+  .require-wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .tour-card-main {
+    padding: 22px 18px;
+  }
+
+  .tour-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .book-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-destination {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-destination-border {
+    width: 60px;
+    height: 1px;
+  }
+
+  .includings-packs {
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .includings-packs-icon {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+}
